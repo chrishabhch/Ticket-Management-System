@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdde1;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ad5389;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    margin-top: 50px;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#ticketTitle, #ticketDescription, #ticketPriority, #ticketStatus {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ticket {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.ticket h3 {
+    margin-top: 0;
+}
+
+.ticket p {
+    margin: 5px 0;
+}
+
+.ticket-actions {
+    text-align: right;
+}
+
+.ticket-actions button {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}

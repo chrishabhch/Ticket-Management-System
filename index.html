@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Management System</h1>
+        
+        <div class="form-container">
+            <input type="text" id="ticketTitle" placeholder="Title" required>
+            <textarea id="ticketDescription" placeholder="Description" required></textarea>
+            <select id="ticketPriority" required>
+                <option value="" disabled selected>Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select id="ticketStatus" required>
+                <option value="" disabled selected>Status</option>
+                <option value="Open">Open</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Resolved">Resolved</option>
+            </select>
+            <button id="createTicket">Create Ticket</button>
+        </div>
+        
+        <div id="ticketList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
